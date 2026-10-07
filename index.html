@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blogify - Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Sushi_blogify</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="bookmarks.html">Bookmarks</a>
+    </nav>
+  </header>
+
+  <main>
+    <div id="loading" class="status-msg">Loading...</div>
+    <div id="error" class="status-msg error-msg" style="display: none;">
+      Something went wrong. Please try again.
+    </div>
+    
+    <div id="posts-container" class="posts-grid"></div>
+    
+    <div id="pagination" class="pagination-container">
+      <button id="prev-btn" disabled>Previous</button>
+      <span id="page-info">Page 1</span>
+      <button id="next-btn">Next</button>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios@1/dist/axios.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
